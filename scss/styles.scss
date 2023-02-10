@@ -1,0 +1,24 @@
+//Global
+@import './global/fonts';
+@import './global/var';
+@import './global/reset';
+@import './global/global';
+
+//Moduls
+@import './moduls/title';
+@import './moduls/list';
+@import './moduls/btn';
+@import './moduls/modal';
+
+//Sections
+@import './sections/header';
+@import './sections/causes';
+@import './sections/why';
+@import './sections/about';
+@import './sections/award';
+@import './sections/projects';
+@import './sections/info';
+@import './sections/tmpl';
+@import './sections/agreements';
+@import './sections/charts';
+@import './sections/footer';

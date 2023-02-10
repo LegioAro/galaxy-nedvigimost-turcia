@@ -1,0 +1,59 @@
+.title {
+  font-family: var(--font-text-2);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 140%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  span {
+    font-style: italic;
+    color: var(--color-select);
+  }
+  &.big {
+    font-size: 48px;
+  }
+  &.middle {
+    font-size: 28px;
+  }
+  &.min {
+    font-size: 20px;
+  }
+  &.select {
+    color: var(--color-select);
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 26px;
+    &.big {
+      font-size: 36px;
+    }
+    &.middle {
+      font-size: 22px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    &.min {
+      font-size: 16px;
+    }
+    &.middle {
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .title {
+    font-size: 20px;
+    &.big {
+      font-size: 20px;
+    }
+
+    &.min {
+      font-size: 14px;
+    }
+  }
+}

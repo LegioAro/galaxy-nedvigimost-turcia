@@ -1,0 +1,174 @@
+//  font-family: 'SFProDisplay',sans-serif;
+//  font-family: 'Jost',sans-serif;
+
+@font-face {
+  font-family: 'Jost';
+  src: url('../fonts/Jost-Light.eot');
+  src: url('../fonts/Jost-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Jost-Light.woff2') format('woff2'), url('../fonts/Jost-Light.woff') format('woff'),
+    url('../fonts/Jost-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('../fonts/Jost-Regular.eot');
+  src: url('../fonts/Jost-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Jost-Regular.woff2') format('woff2'),
+    url('../fonts/Jost-Regular.woff') format('woff'),
+    url('../fonts/Jost-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('../fonts/Jost-Medium.eot');
+  src: url('../fonts/Jost-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Jost-Medium.woff2') format('woff2'),
+    url('../fonts/Jost-Medium.woff') format('woff'),
+    url('../fonts/Jost-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('../fonts/Jost-SemiBold.eot');
+  src: url('../fonts/Jost-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Jost-SemiBold.woff2') format('woff2'),
+    url('../fonts/Jost-SemiBold.woff') format('woff'),
+    url('../fonts/Jost-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('../fonts/Jost-Bold.eot');
+  src: url('../fonts/Jost-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Jost-Bold.woff2') format('woff2'), url('../fonts/Jost-Bold.woff') format('woff'),
+    url('../fonts/Jost-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+///////////////////////////////////////////////////////////////////////////
+
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('../fonts/sfprodisplay-light.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/sfprodisplay-light.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/sfprodisplay-light.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/sfprodisplay-light.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/sfprodisplay-light.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/sfprodisplay-light.svg#sfprodisplay-light')
+      format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('../fonts/sfprodisplay-regular.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/sfprodisplay-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/sfprodisplay-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/sfprodisplay-regular.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/sfprodisplay-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/sfprodisplay-regular.svg#sfprodisplay-regular')
+      format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('../fonts/sfprodisplay-italic.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/sfprodisplay-italic.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/sfprodisplay-italic.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/sfprodisplay-italic.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/sfprodisplay-italic.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/sfprodisplay-italic.svg#sfprodisplay-italic')
+      format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: normal;
+  font-style: italic;
+}
+//
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?dutqq5');
+  src: url('../fonts/icomoon.eot?dutqq5#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?dutqq5') format('truetype'),
+    url('../fonts/icomoon.woff?dutqq5') format('woff'),
+    url('../fonts/icomoon.svg?dutqq5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  & span::before {
+    transition: 0.3s;
+  }
+}
+
+.icon-arrow-btn:before {
+  content: '\e900';
+  color: #f0f0f0;
+}
+.icon-discord .path1:before {
+  content: '\e901';
+  color: rgb(240, 240, 240);
+}
+.icon-discord .path2:before {
+  content: '\e902';
+  margin-left: -0.9560546875em;
+  color: rgb(35, 35, 35);
+}
+.icon-platform .path1:before {
+  content: '\e903';
+  color: rgb(240, 240, 240);
+}
+.icon-platform .path2:before {
+  content: '\e904';
+  margin-left: -0.9560546875em;
+  color: rgb(35, 35, 35);
+}
+.icon-platform .path3:before {
+  content: '\e905';
+  margin-left: -0.9560546875em;
+  color: rgb(35, 35, 35);
+}
+.icon-platform .path4:before {
+  content: '\e906';
+  margin-left: -0.9560546875em;
+  color: rgb(35, 35, 35);
+}
+.icon-telegram .path1:before {
+  content: '\e907';
+  color: rgb(240, 240, 240);
+}
+.icon-telegram .path2:before {
+  content: '\e908';
+  margin-left: -0.9560546875em;
+  color: rgb(35, 35, 35);
+}
