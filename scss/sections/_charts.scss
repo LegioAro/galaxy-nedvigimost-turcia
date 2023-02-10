@@ -72,6 +72,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 1;
     cursor: pointer;
     &-l {
       right: calc(100% + 96px);
