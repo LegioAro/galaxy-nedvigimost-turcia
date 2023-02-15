@@ -22,4 +22,63 @@
 @import './sections/agreements';
 @import './sections/charts';
 @import './sections/footer';
- 
+
+.registration {
+  padding-bottom: 70px;
+  text-align: center;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img {
+    margin-bottom: 30px;
+    span {
+      font-size: 150px;
+      &::before {
+        color: #17871b;
+      }
+    }
+    &.false {
+      span {
+        &::before {
+          color: #d03c22;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    max-width: 768px;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 550px) {
+  .registration {
+    &__img {
+      span {
+        font-size: 100px;
+      }
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+}

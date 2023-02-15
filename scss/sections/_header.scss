@@ -17,6 +17,10 @@
     display: flex;
   }
 
+  &.header__reg {
+    padding-bottom: 50px;
+  }
+
   &__title {
     margin-bottom: 20px;
     max-width: 687px;
