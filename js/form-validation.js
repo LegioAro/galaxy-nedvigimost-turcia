@@ -1,3 +1,26 @@
+///
+function selectCounties() {
+  const select = document.querySelector('.modal__input-select');
+  const selectResult = select.querySelector('.modal__input-select-result');
+  const selectItems = select.querySelectorAll('.modal__input-select-item label');
+
+  selectResult.addEventListener('click', () => {
+    select.classList.toggle('active');
+  });
+
+  selectItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      const itemImgSrc = item.querySelector('img').getAttribute('src');
+      const resultImg = selectResult.querySelector('.modal__input-select-result-img img');
+      resultImg.setAttribute('src', itemImgSrc);
+
+      select.classList.remove('active');
+    });
+  });
+  selectItems[0].click();
+}
+selectCounties();
+
 const inputs = document.querySelectorAll('.val');
 
 inputs.forEach((input) => {
@@ -54,7 +77,8 @@ inputs.forEach((input) => {
 
     if (input.classList.contains('val-tel')) {
       let regTel;
-      const select = document.querySelector('.val-select');
+      const selects = document.querySelectorAll('.modal__input-select-item input');
+      const select = document.querySelector('.modal__input-select-item input:checked');
       const selectValue = select.value;
       let regVal = /[0-9]+/g;
       let regArr = inputValue.matchAll(regVal);
@@ -64,8 +88,10 @@ inputs.forEach((input) => {
 
       let resultRegArr = resultReg.split('');
 
-      select.addEventListener('change', (e) => {
-        input.value = '';
+      selects.forEach((item) => {
+        item.addEventListener('change', (e) => {
+          input.value = '';
+        });
       });
 
       if (selectValue == 'ru') {
@@ -98,17 +124,18 @@ inputs.forEach((input) => {
       if (selectValue == 'ukr') {
         regTel = /^\+?3\d\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$/g;
         input.setAttribute('maxlength', '19');
+
         for (let i = 0; i < resultRegArr.length; i++) {
           if (i === 0) {
-            resultRegArr.splice(i, 0, '+');
+            resultRegArr.splice(i, 2, '+38');
           }
-          if (i == 3) {
+          if (i == 1) {
             resultRegArr.splice(i, 0, ' (');
           }
-          if (i == 7) {
+          if (i == 5) {
             resultRegArr.splice(i, 0, ') ');
           }
-          if (i == 11 || i == 14) {
+          if (i == 9 || i == 12) {
             resultRegArr.splice(i, 0, '-');
           }
         }
@@ -151,5 +178,15 @@ inputs.forEach((input) => {
     }
 
     input.value = newValue;
+  });
+  input.addEventListener('focus', () => {
+    if (input.value.length < 1) {
+      const select = document.querySelector('.modal__input-select-item input:checked');
+      if (select.value == 'ukr') {
+        input.value = '+38';
+      } else if (select.value == 'tur') {
+        input.value = '+90';
+      }
+    }
   });
 });

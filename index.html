@@ -691,11 +691,28 @@
           />
 
           <div class="modal__input-wrapper">
-            <select class="val-select">
-              <option value="ru">ru</option>
-              <option value="ukr">ukr</option>
-              <option value="tur">tur</option>
-            </select>
+            <div class="modal__input-select active">
+              <div class="modal__input-select-result">
+                <div class="modal__input-select-result-img">
+                  <img src="" alt="" />
+                </div>
+                <span class="icon-arrow_drop_down"></span>
+              </div>
+              <div class="modal__input-select-items">
+                <div class="modal__input-select-item">
+                  <input type="radio" value="ru" name="countries" id="countries-rus" />
+                  <label for="countries-rus"><img src="img/countries/russia.png" alt="" /></label>
+                </div>
+                <div class="modal__input-select-item">
+                  <input type="radio" value="ukr" name="countries" id="countries-ukr" />
+                  <label for="countries-ukr"><img src="img/countries/ukraine.png" alt="" /></label>
+                </div>
+                <div class="modal__input-select-item">
+                  <input type="radio" value="tur" name="countries" id="countries-tur" />
+                  <label for="countries-tur"><img src="img/countries/turkey.png" alt="" /></label>
+                </div>
+              </div>
+            </div>
             <input
               type="text"
               required
