@@ -675,16 +675,55 @@
           Внесите свои данные ниже,<span> чтобы получить консультацию</span>
         </div>
         <div class="modal__inputs">
-          <input type="text" placeholder="Имя" name="name" value="" class="modal__input" />
-          <input type="text" placeholder="Емейл" name="email" value="" class="modal__input" />
-          <input type="text" placeholder="Телефон" name="tel" value="" class="modal__input" />
+          <input
+            type="text"
+            placeholder="Имя"
+            name="name"
+            value=""
+            class="modal__input val val-name"
+          />
+          <input
+            type="text"
+            placeholder="Емейл"
+            name="email"
+            value=""
+            class="modal__input val val-email"
+          />
+
+          <div class="modal__input-wrapper">
+            <select class="val-select">
+              <option value="ru">ru</option>
+              <option value="ukr">ukr</option>
+              <option value="tur">tur</option>
+            </select>
+            <input
+              type="text"
+              required
+              placeholder="Телефон"
+              name="tel"
+              value=""
+              class="modal__input val val-tel"
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="Ваш логин в telegram"
+            name="tel"
+            value=""
+            class="modal__input val val-telegram"
+          />
         </div>
-        <button class="modal__btn">Получить консультацию <span class="icon-arrow-btn"></span></button>
+
+        <button class="modal__btn">
+          Получить консультацию <span class="icon-arrow-btn"></span>
+        </button>
       </form>
     </div>
 
     <script src="js/swiper.js"></script>
     <script src="js/resize.js"></script>
+    <script src="js/form-validation.js"></script>
+
     <script src="js/main.js"></script>
   </body>
 </html>
