@@ -79,3 +79,20 @@ window.addEventListener('resize', () => {
   );
   isResize('.tmpl__imgs', '.tmpl__wrapper', '.tmpl__mob', 768, 'first');
 });
+
+const form = document.querySelector('.modal__wrapper');
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  let formInputs = form.querySelectorAll('input');
+  let result = true;
+
+  formInputs.forEach((input) => {
+    if (input.classList.contains('novalid')) {
+      result = false;
+    }
+  });
+
+  if (result) {
+    form.submit();
+  }
+});

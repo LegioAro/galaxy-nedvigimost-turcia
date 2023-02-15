@@ -46,17 +46,22 @@
     width: 100%;
   }
 
+  &__input-block {
+    margin-bottom: 15px;
+  }
+
   &__input {
     border: 0;
     border-bottom: 1px solid var(--color-dark);
     background-color: var(--color-light);
-    padding: 19.5px 0;
+    padding: 5px 0;
     font-family: var(--font-text);
     font-size: 18px;
     line-height: 24px;
     outline: none;
     transition: 0.3s;
     width: 100%;
+    transition: 0.3s;
 
     &::placeholder {
       color: var(--color-text);
@@ -74,6 +79,11 @@
         opacity: 0.5;
       }
     }
+
+    &.novalid {
+      color: #bb1616;
+      border-bottom: 1px solid #bb1616;
+    }
   }
 
   &__title {
@@ -82,7 +92,7 @@
     line-height: 120%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     span {
       font-style: italic;
       color: var(--color-select);

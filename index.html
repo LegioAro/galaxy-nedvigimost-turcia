@@ -131,7 +131,7 @@
                 <div class="why__item-text">
                   <p>
                     В турции разработан генеральный план развития транспортно-логистического
-                    комплекса до 2053 г. Он составлен с учетом абициозной государственной задачи
+                    комплекса до 2053 г. Он составлен с учетом амбициозной государственной задачи
                     вхождения страны в десятку крупнейших экономик мира.
                   </p>
                   <p>
@@ -164,7 +164,7 @@
                 <div class="why__item-text">
                   <p>
                     Турция вошла в пятерку стран “двадцатки” (G20) по темпам роста экономики, и это
-                    особо примичательно на фоне сохранения опасений относительно глобальной
+                    особо примечательно на фоне сохранения опасений относительно глобальной
                     рецессии, - сообщил турецкий лидер Реджеп Тайип Эрдоган
                   </p>
                 </div>
@@ -177,7 +177,7 @@
                 </div>
                 <div class="why__item-img"><img src="img/why/4.png" alt="" /></div>
                 <div class="why__item-text">
-                  <p>ПРООН обнародовала “Отчет о развитии человечства за 2022-й год”</p>
+                  <p>ПРООН обнародовала “Отчет о развитии человечества за 2022-й год”</p>
                 </div>
               </div>
             </div>
@@ -271,9 +271,7 @@
               <ul class="list">
                 <li class="list__item">Головная компания в ОАЭ</li>
                 <li class="list__item">Владелец земли — дочерняя компания в Турции</li>
-                <li class="list__item">
-                  Застройщики подрядчик — лицензированные компании в Турции
-                </li>
+                <li class="list__item">Застройщики — лицензированные компании в Турции</li>
               </ul>
             </div>
             <div class="about__desc-imgs">
@@ -284,7 +282,7 @@
           </div>
           <div class="about__subtitle">
             <div class="title middle">
-              ECO LIFE придерживается
+              ASGARD придерживается
               <span> высоких европейских стандартов качества строительства,</span> что делает его
               объекты востребованными и рентабельными
             </div>
@@ -653,9 +651,9 @@
                 >
               </div>
               <div class="footer__item-text">
-                Galaxy Platform является маркетинговым партнером ECO LIFE и не несет ответственность
+                Galaxy Platform является маркетинговым партнером ASGARD и не несет ответственность
                 за привлеченные средства, тк все выплаты осуществляются головной компанией проекта
-                ECO LIFE. Перед принятием решения о сотрудничестве необходимо ознакомиться со всеми
+                ASGARD. Перед принятием решения о сотрудничестве необходимо ознакомиться со всеми
                 условиями сделки. Исходя из вышесказанного. Не стоит полагаться только лишь на
                 данный материал вместо осуществления независимого анализа.
               </div>
@@ -675,60 +673,79 @@
           Внесите свои данные ниже,<span> чтобы получить консультацию</span>
         </div>
         <div class="modal__inputs">
-          <input
-            type="text"
-            placeholder="Имя"
-            name="name"
-            value=""
-            class="modal__input val val-name"
-          />
-          <input
-            type="text"
-            placeholder="Емейл"
-            name="email"
-            value=""
-            class="modal__input val val-email"
-          />
-
-          <div class="modal__input-wrapper">
-            <div class="modal__input-select active">
-              <div class="modal__input-select-result">
-                <div class="modal__input-select-result-img">
-                  <img src="" alt="" />
-                </div>
-                <span class="icon-arrow_drop_down"></span>
-              </div>
-              <div class="modal__input-select-items">
-                <div class="modal__input-select-item">
-                  <input type="radio" value="ru" name="countries" id="countries-rus" />
-                  <label for="countries-rus"><img src="img/countries/russia.png" alt="" /></label>
-                </div>
-                <div class="modal__input-select-item">
-                  <input type="radio" value="ukr" name="countries" id="countries-ukr" />
-                  <label for="countries-ukr"><img src="img/countries/ukraine.png" alt="" /></label>
-                </div>
-                <div class="modal__input-select-item">
-                  <input type="radio" value="tur" name="countries" id="countries-tur" />
-                  <label for="countries-tur"><img src="img/countries/turkey.png" alt="" /></label>
-                </div>
-              </div>
-            </div>
+          <div class="modal__input-block">
+            <label for="modal-name" class="">Имя</label>
             <input
-              type="text"
               required
-              placeholder="Телефон"
-              name="tel"
+              type="text"
+              name="name"
               value=""
-              class="modal__input val val-tel"
+              class="modal__input val val-name"
+              id="modal-name"
             />
           </div>
-          <input
-            type="text"
-            placeholder="Ваш логин в telegram"
-            name="tel"
-            value=""
-            class="modal__input val val-telegram"
-          />
+
+          <div class="modal__input-block">
+            <label for="modal-email" class="">Email</label>
+            <input
+              required
+              type="text"
+              name="email"
+              value=""
+              id="modal-email"
+              class="modal__input val val-email"
+            />
+          </div>
+          <div class="modal__input-block">
+            <label for="modal-tel" class="">Телефон</label>
+            <div class="modal__input-wrapper">
+              <div class="modal__input-select">
+                <div class="modal__input-select-result">
+                  <div class="modal__input-select-result-img">
+                    <img src="" alt="" />
+                  </div>
+                  <span class="icon-arrow_drop_down"></span>
+                </div>
+                <div class="modal__input-select-items">
+                  <div class="modal__input-select-item">
+                    <input type="radio" value="ru" name="countries" id="countries-rus" />
+                    <label for="countries-rus"><img src="img/countries/russia.png" alt="" /></label>
+                  </div>
+                  <div class="modal__input-select-item">
+                    <input type="radio" value="ukr" name="countries" id="countries-ukr" />
+                    <label for="countries-ukr"
+                      ><img src="img/countries/ukraine.png" alt=""
+                    /></label>
+                  </div>
+                  <div class="modal__input-select-item">
+                    <input type="radio" value="tur" name="countries" id="countries-tur" />
+                    <label for="countries-tur"><img src="img/countries/turkey.png" alt="" /></label>
+                  </div>
+                </div>
+              </div>
+              <input
+                required
+                type="text"
+                required
+                id="modal-tel"
+                name="tel"
+                value=""
+                class="modal__input val val-tel"
+              />
+            </div>
+          </div>
+          <div class="modal__input-block">
+            <label for="modal-telegram" class="">Ваш логин в telegram</label>
+
+            <input
+              required
+              type="text"
+              id="modal-telegram"
+              name="tel"
+              value=""
+              class="modal__input val val-telegram"
+            />
+          </div>
         </div>
 
         <button class="modal__btn">
