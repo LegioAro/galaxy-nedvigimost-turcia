@@ -77,7 +77,7 @@ inputs.forEach((input) => {
 
     if (input.classList.contains('val-tel')) {
       let regTel;
-      const selects = document.querySelectorAll('.modal__input-select-item input');
+
       const select = document.querySelector('.modal__input-select-item input:checked');
       const selectValue = select.value;
       let regVal = /[0-9]+/g;
@@ -87,12 +87,6 @@ inputs.forEach((input) => {
       }
 
       let resultRegArr = resultReg.split('');
-
-      selects.forEach((item) => {
-        item.addEventListener('change', (e) => {
-          input.value = '';
-        });
-      });
 
       if (selectValue == 'ru') {
         regTel = /^\+?[78]\s\(\d{3}\)\s\d{3}-\d{2}-\d{0,3}$/g;
@@ -179,12 +173,22 @@ inputs.forEach((input) => {
 
     input.value = newValue;
   });
+  const selects = document.querySelectorAll('.modal__input-select-item input');
+  selects.forEach((item) => {
+    console.log('123');
+    item.addEventListener('change', (e) => {
+      if (input.classList.contains('val-tel')) {
+        input.value = '';
+      }
+    });
+  });
+
   input.addEventListener('focus', () => {
     if (input.value.length < 1) {
       const select = document.querySelector('.modal__input-select-item input:checked');
-      if (select.value == 'ukr') {
+      if (select.value == 'ukr' && input.classList.contains('val-tel')) {
         input.value = '+38';
-      } else if (select.value == 'tur') {
+      } else if (select.value == 'tur' && input.classList.contains('val-tel')) {
         input.value = '+90';
       }
     }
