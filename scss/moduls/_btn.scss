@@ -1,54 +1,58 @@
 .btn {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   border: 0;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--color-select);
+  padding: 30px 20px;
+  border: 1px solid var(--color-select);
+  transition: 0.3s;
 
   &__text {
-    color: var(--color-select);
+    color: var(--color-light);
     font-weight: 700;
     font-size: 27px;
     line-height: 140%;
     letter-spacing: 0.03em;
-    padding-bottom: 3px;
-    border-bottom: 1px solid var(--color-dark);
+    transition: 0.3s;
+
     margin-right: 6px;
     text-transform: uppercase;
     text-align: left;
   }
 
-  &__icon {
-    width: 100%;
-    max-width: 41.5px;
+  span {
+    font-size: 41px;
     display: flex;
     transition: 0.3s;
+    color: var(--color-light);
+    margin-left: 10px;
   }
 
   &:hover {
-    .btn__icon {
-      transform: translateX(-5px) translateY(-5px);
-    }
-  }
-
-  &.dark {
+    background-color: var(--color-light);
     .btn__text {
-      color: var(--color-light);
-      border-bottom: 1px solid var(--color-light);
+      color: var(--color-select);
+    }
+    span {
+      transform: translateX(-5px) translateY(-5px);
+      &::before {
+        color: var(--color-select);
+      }
     }
   }
 }
 
 @media (max-width: 700px) {
   .btn {
+    padding: 20px;
     &__text {
       font-size: 20px;
-      padding-bottom: 20px;
       margin-right: 0;
       padding-right: 20px;
     }
-    &__icon {
-      margin-left: -15px;
+    span {
+      font-size: 25px;
     }
   }
 }
